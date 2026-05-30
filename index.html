@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Portfolio PPL Terbimbing | Sari Dewi Anggraini</title>
+  <meta name="description" content="E-Portfolio PPL Terbimbing PPG Calon Guru - Sari Dewi Anggraini, Program Studi Pendidikan Matematika" />
+  <meta name="keywords" content="PPL Terbimbing, PPG, E-Portfolio, Pendidikan Matematika, Calon Guru" />
+  <meta property="og:title" content="E-Portfolio PPL Terbimbing | Sari Dewi Anggraini" />
+  <meta property="og:description" content="E-Portfolio PPL Terbimbing PPG Calon Guru" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     PRELOADER
+═══════════════════════════════════════════════ -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">EP</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    <p class="preloader-text">Memuat E-Portfolio...</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     CURSOR CUSTOM
+═══════════════════════════════════════════════ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#beranda" class="nav-brand">
+      <span class="brand-icon">EP</span>
+      <span class="brand-text">E-Portfolio <em>PPL</em></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+        <li><a href="#profil" class="nav-link">Profil</a></li>
+        <li><a href="#artefak" class="nav-link">Artefak</a></li>
+        <li><a href="#penilaian" class="nav-link">Penilaian</a></li>
+        <li><a href="#model-guru" class="nav-link">Model Guru</a></li>
+        <li><a href="#refleksi" class="nav-link">Refleksi</a></li>
+        <li><a href="#filosofi" class="nav-link">Filosofi</a></li>
+        <li><a href="#dokumentasi" class="nav-link">Dokumentasi</a></li>
+        <li><a href="#lampiran" class="nav-link">Lampiran</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav-progress" id="navProgress"></div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 1: BERANDA / HERO
+═══════════════════════════════════════════════ -->
+<section id="beranda" class="section hero-section">
+  <div class="hero-bg-decor">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-grid"></div>
+  </div>
+
+  <div class="container hero-container">
+    <div class="hero-content" data-aos="fade-right" data-aos-duration="900">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        PPG Calon Guru · Tahun Akademik 2024/2025
+      </div>
+      <h1 class="hero-name">Sari Dewi<br/><em>Anggraini</em></h1>
+      <div class="hero-meta">
+        <span class="meta-chip"><i class="fas fa-graduation-cap"></i> Pendidikan Matematika</span>
+        <span class="meta-chip"><i class="fas fa-school"></i> SMAN 1 Semarang</span>
+        <span class="meta-chip"><i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah</span>
+      </div>
+      <p class="hero-tagline">"Setiap anak belajar dengan caranya sendiri — tugas guru adalah menemukan jalan itu."</p>
+      <div class="hero-cta">
+        <a href="#artefak" class="btn btn-primary">
+          <span>Lihat Artefak</span><i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#kontak" class="btn btn-outline">
+          <span>Hubungi Saya</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+      <div class="photo-frame">
+        <div class="photo-placeholder">
+          <i class="fas fa-user-graduate"></i>
+          <span>Foto Profil</span>
+        </div>
+        <div class="photo-ring ring-1"></div>
+        <div class="photo-ring ring-2"></div>
+        <div class="photo-accent"></div>
+      </div>
+
+      <!-- Stats floating cards -->
+      <div class="stat-float stat-float-1" data-aos="zoom-in" data-aos-delay="600">
+        <span class="stat-num" data-target="12">0</span>
+        <span class="stat-label">Perangkat Pembelajaran</span>
+      </div>
+      <div class="stat-float stat-float-2" data-aos="zoom-in" data-aos-delay="700">
+        <span class="stat-num" data-target="3">0</span>
+        <span class="stat-label">Siklus Praktik Mengajar</span>
+      </div>
+      <div class="stat-float stat-float-3" data-aos="zoom-in" data-aos-delay="800">
+        <span class="stat-num" data-target="8">0</span>
+        <span class="stat-label">Media Pembelajaran</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profil Singkat -->
+  <div class="profil-singkat-wrap">
+    <div class="container">
+      <div class="profil-singkat" data-aos="fade-up" data-aos-delay="300">
+        <div class="ps-item">
+          <div class="ps-icon"><i class="fas fa-home"></i></div>
+          <h4>Asal Daerah</h4>
+          <p>Wonosobo, Jawa Tengah — kota di pegunungan dengan kabut pagi yang menginspirasi.</p>
+        </div>
+        <div class="ps-item">
+          <div class="ps-icon"><i class="fas fa-lightbulb"></i></div>
+          <h4>Inspirasi Menjadi Guru</h4>
+          <p>Seorang guru matematika SMA yang mengajarkan bahwa logika dan kreativitas berjalan beriringan.</p>
+        </div>
+        <div class="ps-item">
+          <div class="ps-icon"><i class="fas fa-bullseye"></i></div>
+          <h4>Tujuan Saya</h4>
+          <p>Menjadi guru profesional yang mampu menumbuhkan rasa ingin tahu dan cinta belajar pada setiap siswa.</p>
+        </div>
+        <div class="ps-item">
+          <div class="ps-icon"><i class="fas fa-star"></i></div>
+          <h4>Nilai yang Diyakini</h4>
+          <p>Setiap siswa berhak mendapat pengalaman belajar yang bermakna, relevan, dan menyenangkan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Statistik Ringkasan -->
+  <div class="container">
+    <div class="stats-grid" data-aos="fade-up">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-book-open"></i></div>
+        <div class="stat-info">
+          <span class="stat-big" data-target="12">0</span>
+          <span>Perangkat Pembelajaran</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="stat-info">
+          <span class="stat-big" data-target="9">0</span>
+          <span>Pertemuan Mengajar</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-film"></i></div>
+        <div class="stat-info">
+          <span class="stat-big" data-target="8">0</span>
+          <span>Media Pembelajaran</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-pen-alt"></i></div>
+        <div class="stat-info">
+          <span class="stat-big" data-target="6">0</span>
+          <span>Refleksi Tertulis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kontak Singkat -->
+  <div class="container">
+    <div class="kontak-strip" data-aos="fade-up">
+      <a href="mailto:sari.dewi@email.com" class="kontak-item">
+        <i class="fas fa-envelope"></i>
+        <span>sari.dewi@email.com</span>
+      </a>
+      <a href="https://wa.me/6281234567890" class="kontak-item">
+        <i class="fab fa-whatsapp"></i>
+        <span>+62 812-3456-7890</span>
+      </a>
+      <a href="https://linkedin.com" class="kontak-item">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://instagram.com" class="kontak-item">
+        <i class="fab fa-instagram"></i>
+        <span>@saridewi_guru</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 2: PROFIL MAHASISWA
+═══════════════════════════════════════════════ -->
+<section id="profil" class="section">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Profil Mahasiswa</span></div></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Tentang Saya</span>
+      <h2 class="section-title">Profil <em>Mahasiswa</em></h2>
+      <p class="section-sub">Mengenal lebih dekat calon guru yang bersemangat dalam pendidikan matematika</p>
+    </div>
+
+    <div class="profil-grid">
+      <!-- Identitas -->
+      <div class="profil-card identitas-card" data-aos="fade-right">
+        <div class="card-header-accent">
+          <i class="fas fa-id-card"></i>
+          <h3>Identitas Diri</h3>
+        </div>
+        <table class="identitas-table">
+          <tr><th>Nama Lengkap</th><td>Sari Dewi Anggraini, S.Pd.</td></tr>
+          <tr><th>Tempat, Tgl. Lahir</th><td>Wonosobo, 14 Maret 1998</td></tr>
+          <tr><th>Program Studi</th><td>PPG Pendidikan Matematika</td></tr>
+          <tr><th>Bidang Studi</th><td>Matematika</td></tr>
+          <tr><th>Sekolah PPL</th><td>SMAN 1 Semarang</td></tr>
+          <tr><th>Guru Pamong</th><td>Dra. Rina Kusumawati, M.Pd.</td></tr>
+          <tr><th>DPL</th><td>Dr. Budi Santoso, M.Si.</td></tr>
+          <tr><th>Tahun Akademik</th><td>2024/2025</td></tr>
+        </table>
+      </div>
+
+      <!-- Narasi -->
+      <div class="profil-narasi" data-aos="fade-left">
+        <div class="narasi-tabs">
+          <button class="ntab active" data-tab="latar">Latar Belakang</button>
+          <button class="ntab" data-tab="inspirasi">Inspirasi</button>
+          <button class="ntab" data-tab="tujuan">Tujuan</button>
+          <button class="ntab" data-tab="nilai">Nilai-Nilai</button>
+        </div>
+        <div class="ntab-content active" data-content="latar">
+          <h4>Latar Belakang Pendidikan</h4>
+          <p>Saya menyelesaikan pendidikan S1 Pendidikan Matematika di Universitas Negeri Semarang dengan predikat cumlaude. Sejak bangku kuliah, saya aktif dalam program pengabdian masyarakat dan tutor matematika untuk siswa SMA di daerah Semarang.</p>
+          <p>Keunikan daerah asal saya — Wonosobo dengan dataran tinggi Diengnya — mengajarkan bahwa keindahan sejati lahir dari kesabaran. Filosofi ini saya bawa dalam pembelajaran: setiap konsep matematika yang tampak rumit akan indah saat siswa menemukan sendiri polanya.</p>
+        </div>
+        <div class="ntab-content" data-content="inspirasi">
+          <h4>Inspirasi Menjadi Guru</h4>
+          <p>Bapak Harto, guru matematika SMA saya, adalah sosok yang mengubah pandangan saya tentang matematika. Beliau tidak sekadar mengajarkan rumus, tetapi mengajak kami "berpetualang" dalam logika dan pola. Saya ingin menjadi seperti beliau — guru yang dikenang bukan karena cara mengajarnya yang mudah, tetapi karena cara beliau membuat siswa merasa mampu.</p>
+        </div>
+        <div class="ntab-content" data-content="tujuan">
+          <h4>Tujuan Menjadi Guru Profesional</h4>
+          <p>Menjadi guru bukan hanya profesi bagi saya, melainkan sebuah panggilan. Saya ingin berkontribusi dalam menciptakan generasi yang tidak hanya cerdas secara akademis, tetapi juga memiliki kemampuan berpikir kritis, kreatif, dan kolaboratif yang dibutuhkan di era abad 21.</p>
+          <p>Target spesifik saya adalah mengintegrasikan teknologi dan pendekatan berdiferensiasi untuk memastikan setiap siswa — dengan kecepatan dan gaya belajar yang berbeda — dapat mencapai potensi optimalnya.</p>
+        </div>
+        <div class="ntab-content" data-content="nilai">
+          <h4>Nilai-Nilai yang Diyakini</h4>
+          <ul class="nilai-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Inklusivitas:</strong> Setiap siswa berhak mendapat kesempatan belajar yang setara</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Autentisitas:</strong> Pembelajaran bermakna saat terhubung dengan dunia nyata siswa</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Keberanian:</strong> Guru yang baik berani berinovasi dan belajar dari kesalahan</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Empati:</strong> Memahami konteks dan kebutuhan siswa adalah fondasi pengajaran</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline Pendidikan -->
+    <div class="section-subheader" data-aos="fade-up">
+      <h3>Perjalanan <em>Pendidikan</em></h3>
+    </div>
+    <div class="timeline" data-aos="fade-up">
+      <div class="timeline-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2010 – 2013</div>
+        <div class="tl-card">
+          <h4>SMP Negeri 2 Wonosobo</h4>
+          <p>Meraih juara 1 olimpiade matematika tingkat kabupaten. Awal kecintaan pada logika dan pola bilangan.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2013 – 2016</div>
+        <div class="tl-card">
+          <h4>SMA Negeri 1 Wonosobo</h4>
+          <p>Jurusan IPA. Aktif di klub matematika dan KIR. Meraih medali perunggu olimpiade sains provinsi Jawa Tengah.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2016 – 2020</div>
+        <div class="tl-card">
+          <h4>S1 Pendidikan Matematika — UNNES</h4>
+          <p>Lulus dengan IPK 3.82 (Cumlaude). Skripsi: "Efektivitas Model PBL dengan Pendekatan TPACK terhadap Kemampuan Pemecahan Masalah Matematis Siswa SMA."</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2020 – 2024</div>
+        <div class="tl-card">
+          <h4>Guru Honorer — SMP Negeri 5 Semarang</h4>
+          <p>Mengajar matematika kelas VII–IX. Mengembangkan media pembelajaran berbasis digital dan menerapkan asesmen berdiferensiasi.</p>
+        </div>
+      </div>
+      <div class="timeline-item active">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2024 – Sekarang</div>
+        <div class="tl-card">
+          <h4>PPG Calon Guru — PPL Terbimbing</h4>
+          <p>Program Profesi Guru di SMAN 1 Semarang. Menjalani tiga siklus praktik mengajar dengan bimbingan Guru Pamong dan DPL.</p>
+          <span class="tl-badge">Sedang Berlangsung</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 3: ARTEFAK PEMBELAJARAN
+═══════════════════════════════════════════════ -->
+<section id="artefak" class="section section-alt">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Artefak Pembelajaran</span></div></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Dokumentasi Kerja</span>
+      <h2 class="section-title">Artefak <em>Pembelajaran</em></h2>
+      <p class="section-sub">Koleksi lengkap perangkat, media, dan dokumentasi proses pembelajaran selama PPL Terbimbing</p>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter-bar" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="perangkat">Perangkat Pembelajaran</button>
+      <button class="filter-btn" data-filter="media">Media Pembelajaran</button>
+      <button class="filter-btn" data-filter="siswa">Hasil Kerja Siswa</button>
+      <button class="filter-btn" data-filter="dokumentasi">Dokumentasi Mengajar</button>
+      <button class="filter-btn" data-filter="penilaian">Penilaian</button>
+    </div>
+
+    <!-- Artefak Grid -->
+    <div class="artefak-grid" id="artefakGrid">
+
+      <!-- Perangkat Pembelajaran -->
+      <div class="artefak-card" data-category="perangkat" data-aos="zoom-in">
+        <div class="artefak-thumb thumb-purple">
+          <i class="fas fa-file-alt"></i>
+          <span class="artefak-cat-badge">Perangkat</span>
+        </div>
+        <div class="artefak-body">
+          <h4>Modul Ajar — Persamaan Kuadrat</h4>
+          <p>Modul ajar berbasis PBL untuk materi persamaan kuadrat kelas X dengan pendekatan berdiferensiasi.</p>
+          <div class="artefak-meta">
+            <span><i class="fas fa-calendar"></i> Oktober 2024</span>
+            <span><i class="fas fa-layer-group"></i> Kelas X MIPA</span>
+          </div>
+        </div>
+        <div class="artefak-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalModulAjar')">Detail & Analisis</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+
+      <div class="artefak-card" data-category="perangkat" data-aos="zoom-in" data-aos-delay="100">
+        <div class="artefak-thumb thumb-rose">
+          <i class="fas fa-clipboard-list"></i>
+          <span class="artefak-cat-badge">Perangkat</span>
+        </div>
+        <div class="artefak-body">
+          <h4>LKPD — Fungsi Kuadrat</h4>
+          <p>Lembar kerja peserta didik untuk eksplorasi fungsi kuadrat dengan pendekatan discovery learning.</p>
+          <div class="artefak-meta">
+            <span><i class="fas fa-calendar"></i> November 2024</span>
+            <span><i class="fas fa-layer-group"></i> Kelas X IPA 2</span>
+          </div>
+        </div>
+        <div class="artefak-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalLKPD')">Detail & Analisis</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+
+      <div class="artefak-card" data-category="perangkat" data-aos="zoom-in" data-aos-delay="150">
+        <div class="artefak-thumb thumb-teal">
+          <i class="fas fa-route"></i>
+          <span class="artefak-cat-badge">Perangkat</span>
+        </div>
+        <div class="artefak-body">
+          <h4>ATP — Semester Ganjil</h4>
+          <p>Alur Tujuan Pembelajaran matematika kelas X semester ganjil berdasarkan Kurikulum Merdeka.</p>
+          <div class="artefak-meta">
+            <span><i class="fas fa-calendar"></i> September 2024</span>
+            <span><i class="fas fa-layer-group"></i> Kelas X</span>
+          </div>
+        </div>
+        <div class="artefak-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalATP')">Detail & Analisis</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+
+      <!-- Media Pembelajaran -->
+      <div class="artefak-card" data-category="media" data-aos="zoom-in">
+        <div class="artefak-thumb thumb-orange">
+          <i class="fas fa-presentation-screen"></i>
+          <span class="artefak-cat-badge">Media</span>
+        </div>
+        <div class="artefak-body">
+          <h4>Slide Canva — Persamaan Kuadrat</h4>
+          <p>Presentasi interaktif berbasis Canva dengan animasi dan infografis untuk menjelaskan konsep diskriminan.</p>
+          <div class="artefak-meta">
+            <span><i class="fas fa-calendar"></i> Oktober 2024</span>
+            <span><i class="fas fa-layer-group"></i> Siklus 1</span>
+          </div>
+        </div>
+        <div class="artefak-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalCanva')">Detail & Analisis</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+
+      <div class="artefak-card" data-category="media" data-aos="zoom-in" data-aos-delay="100">
+        <div class="artefak-thumb thumb-blue">
+          <i class="fab fa-youtube"></i>
+          <span class="artefak-cat-badge">Media</span>
+        </div>
+        <div class="artefak-body">
+          <h4>Video Pembelajaran — Grafik Fungsi Kuadrat</h4>
+          <p>Video animasi 7 menit yang menjelaskan transformasi grafik fungsi kuadrat secara visual dan interaktif.</p>
+          <div class="artefak-meta">
+            <span><i class="fas fa-calendar"></i> November 2024</span>
+            <span><i class="fas fa-clock"></i> 7 menit</span>
+          </div>
+        </div>
+        <div class="artefak-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalVideo')">Tonton & Analisis</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="artefak-card" data-category="media" data-aos="zoom-in" data-aos-delay="150">
+        <div class="artefak-thumb thumb-green">
+          <i class="fas fa-gamepad"></i>
+          <span class="artefak-cat-badge">Media</span>
+        </div>
+        <div class="artefak-body">
+          <h4>Kuis Quizizz — Evaluasi Bab 2</h4>
+          <p>Kuis interaktif berbasis Quizizz dengan 20 soal pilihan ganda dan isian singkat untuk evaluasi formatif.</p>
+          <div class="artefak-meta">
+            <span><i class="fas fa-calendar"></i> November 2024</span>
+            <span><i class="fas fa-users"></i> 34 siswa</span>
+          </div>
+        </div>
+        <div class="artefak-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalQuizizz')">Detail & Analisis</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <!-- Hasil Kerja Siswa -->
+      <div class="artefak-card" data-category="siswa" data-aos="zoom-in">
+        <div class="artefak-thumb thumb-pink">
+          <i class="fas fa-users"></i>
+          <span class="artefak-cat-badge">Hasil Siswa</span>
+        </div>
+        <div class="artefak-body">
+          <h4>Produk Proyek — Aplikasi Kuadrat dalam Kehidupan</h4>
+          <p>Hasil proyek siswa berupa poster dan presentasi tentang aplikasi fungsi kuadrat dalam kehidupan nyata.</p>
+          <div class="artefak-meta">
+            <span><i class="fas fa-calendar"></i> Desember 2024</span>
+            <span><i class="fas fa-users"></i> 8 kelompok</span>
+          </div>
+        </div>
+        <div class="artefak-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalProdukSiswa')">Lihat Galeri</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+
+      <!-- Penilaian -->
+      <div class="artefak-card" data-category="penilaian" data-aos="zoom-in">
+        <div class="artefak-thumb thumb-gold">
+          <i class="fas fa-star-half-alt"></i>
+          <span class="artefak-cat-badge">Penilaian</span>
+        </div>
+        <div class="artefak-body">
+          <h4>Lampiran 7 — Penilaian Perangkat</h4>
+          <p>Instrumen penilaian penyusunan perangkat pembelajaran oleh Guru Pamong — Nilai: 89/100.</p>
+          <div class="artefak-meta">
+            <span><i class="fas fa-user-tie"></i> Guru Pamong</span>
+            <span><i class="fas fa-star"></i> 89/100</span>
+          </div>
+        </div>
+        <div class="artefak-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalLamp7')">Lihat Detail</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 3B: ANALISIS ARTEFAK
+═══════════════════════════════════════════════ -->
+<section id="analisis" class="section">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Analisis Artefak</span></div></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Kajian Mendalam</span>
+      <h2 class="section-title">Analisis <em>Artefak</em></h2>
+      <p class="section-sub">Refleksi dan analisis teoritis atas setiap artefak pembelajaran yang dikembangkan</p>
+    </div>
+
+    <div class="analisis-container" data-aos="fade-up">
+      <!-- Kajian Teori Box -->
+      <div class="teori-box">
+        <div class="teori-box-header">
+          <i class="fas fa-book-reader"></i>
+          <h3>Kerangka Teori yang Digunakan</h3>
+        </div>
+        <div class="teori-tags">
+          <span class="teori-tag">Pembelajaran Berdiferensiasi</span>
+          <span class="teori-tag">TPACK</span>
+          <span class="teori-tag">Problem-Based Learning</span>
+          <span class="teori-tag">Project-Based Learning</span>
+          <span class="teori-tag">Konstruktivisme Vygotsky</span>
+          <span class="teori-tag">Culturally Responsive Teaching</span>
+          <span class="teori-tag">Social Emotional Learning</span>
+          <span class="teori-tag">Discovery Learning</span>
+        </div>
+      </div>
+
+      <!-- Accordion Analisis -->
+      <div class="accordion-list">
+
+        <div class="accordion-item" data-aos="fade-up">
+          <button class="accordion-trigger">
+            <span class="acc-num">01</span>
+            <span class="acc-title">Analisis Modul Ajar — Persamaan Kuadrat</span>
+            <i class="fas fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="analisis-tabs">
+              <button class="atab active" data-atab="desk1">Deskripsi</button>
+              <button class="atab" data-atab="konteks1">Konteks</button>
+              <button class="atab" data-atab="teori1">Teori Pedagogi</button>
+              <button class="atab" data-atab="refleksi1">Refleksi</button>
+            </div>
+            <div class="atab-panel active" data-apanel="desk1">
+              <h5>Deskripsi Artefak</h5>
+              <p>Modul ajar ini dirancang untuk pembelajaran matematika kelas X MIPA pada materi persamaan kuadrat. Modul terdiri dari 4 pertemuan dengan total 12 JP, mencakup eksplorasi konsep, latihan terbimbing, dan proyek aplikasi.</p>
+              <h5>Tujuan Pembelajaran</h5>
+              <ul>
+                <li>Peserta didik mampu menentukan akar persamaan kuadrat dengan berbagai metode</li>
+                <li>Peserta didik mampu menganalisis diskriminan dan menggunakannya untuk memecahkan masalah</li>
+                <li>Peserta didik mampu mengaplikasikan konsep persamaan kuadrat dalam konteks nyata</li>
+              </ul>
+            </div>
+            <div class="atab-panel" data-apanel="konteks1">
+              <h5>Konteks Penyusunan</h5>
+              <p>Modul disusun berdasarkan hasil asesmen diagnostik yang menunjukkan 40% siswa kelas X MIPA mengalami kesulitan dalam operasi aljabar dasar. Dengan data ini, modul dirancang dengan konten yang berjenjang dan scaffolding yang memadai.</p>
+              <h5>Kendala yang Dihadapi</h5>
+              <ul>
+                <li>Perbedaan kecepatan belajar yang signifikan antar siswa</li>
+                <li>Keterbatasan waktu untuk eksplorasi mendalam</li>
+                <li>Ketersediaan perangkat digital yang tidak merata</li>
+              </ul>
+            </div>
+            <div class="atab-panel" data-apanel="teori1">
+              <h5>Teori Pedagogi yang Digunakan</h5>
+              <div class="teori-detail-card">
+                <h6><i class="fas fa-circle-dot"></i> Pembelajaran Berdiferensiasi</h6>
+                <p>Modul menyediakan tiga jalur belajar: eksplorasi mandiri untuk siswa advanced, latihan terbimbing untuk siswa on-grade, dan materi remedial visual untuk siswa yang membutuhkan dukungan tambahan.</p>
+              </div>
+              <div class="teori-detail-card">
+                <h6><i class="fas fa-circle-dot"></i> TPACK (Technological Pedagogical Content Knowledge)</h6>
+                <p>Integrasi GeoGebra untuk visualisasi grafik kuadrat membantu siswa membangun pemahaman konseptual sebelum masuk ke prosedural.</p>
+              </div>
+              <div class="teori-detail-card">
+                <h6><i class="fas fa-circle-dot"></i> Konstruktivisme Vygotsky</h6>
+                <p>Setiap pertemuan dibuka dengan aktivitas Zone of Proximal Development — siswa mengeksplorasi konsep baru dalam kelompok dengan bimbingan pertanyaan pemantik.</p>
+              </div>
+            </div>
+            <div class="atab-panel" data-apanel="refleksi1">
+              <h5>Refleksi Pribadi</h5>
+              <p>Proses penyusunan modul ini mengajarkan saya bahwa desain pembelajaran yang baik dimulai dari pemahaman mendalam tentang profil pelajar, bukan dari materi. Saya perlu lebih konsisten dalam memberikan pilihan bagi siswa untuk mendemonstrasikan pemahaman mereka.</p>
+              <h5>Rencana Perbaikan</h5>
+              <p>Pada siklus berikutnya, saya akan menambahkan opsi asesmen berbasis produk (poster, video pendek, presentasi lisan) sebagai alternatif dari tes tertulis konvensional.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <button class="accordion-trigger">
+            <span class="acc-num">02</span>
+            <span class="acc-title">Analisis LKPD — Fungsi Kuadrat</span>
+            <i class="fas fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="analisis-tabs">
+              <button class="atab active" data-atab="desk2">Deskripsi</button>
+              <button class="atab" data-atab="teori2">Teori Pedagogi</button>
+              <button class="atab" data-atab="refleksi2">Refleksi</button>
+            </div>
+            <div class="atab-panel active" data-apanel="desk2">
+              <h5>Deskripsi Artefak</h5>
+              <p>LKPD ini dirancang dengan pendekatan discovery learning untuk materi fungsi kuadrat. Siswa diajak mengeksplorasi hubungan antara koefisien a, b, c dengan bentuk dan posisi grafik melalui serangkaian aktivitas terstruktur menggunakan GeoGebra.</p>
+            </div>
+            <div class="atab-panel" data-apanel="teori2">
+              <h5>Discovery Learning (Bruner)</h5>
+              <p>LKPD menggunakan sintaks: stimulasi → identifikasi masalah → pengumpulan data → pengolahan data → verifikasi → generalisasi. Setiap langkah dirancang agar siswa tiba pada kesimpulan secara mandiri.</p>
+            </div>
+            <div class="atab-panel" data-apanel="refleksi2">
+              <h5>Refleksi</h5>
+              <p>LKPD ini berhasil meningkatkan keterlibatan siswa, namun pertanyaan pada fase generalisasi terlalu terbuka untuk siswa yang belum terbiasa dengan pembelajaran berbasis eksplorasi. Perlu penambahan scaffolding berupa hint bertahap.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+          <button class="accordion-trigger">
+            <span class="acc-num">03</span>
+            <span class="acc-title">Analisis Media Canva — Persamaan Kuadrat</span>
+            <i class="fas fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="analisis-tabs">
+              <button class="atab active" data-atab="desk3">Deskripsi</button>
+              <button class="atab" data-atab="teori3">Teori Pedagogi</button>
+              <button class="atab" data-atab="refleksi3">Refleksi</button>
+            </div>
+            <div class="atab-panel active" data-apanel="desk3">
+              <h5>Deskripsi Artefak</h5>
+              <p>Slide presentasi interaktif berbasis Canva dengan 32 slide. Menggabungkan infografis, animasi, contoh kontekstual, dan pertanyaan diskusi. Dirancang dengan prinsip multimedia learning untuk meminimalkan cognitive overload.</p>
+            </div>
+            <div class="atab-panel" data-apanel="teori3">
+              <h5>Multimedia Learning Theory (Mayer)</h5>
+              <p>Slide dirancang dengan prinsip coherence (hanya konten esensial), signaling (highlight konsep kunci), dan segmenting (materi dipecah ke unit-unit kecil) untuk mengoptimalkan proses encoding informasi.</p>
+            </div>
+            <div class="atab-panel" data-apanel="refleksi3">
+              <h5>Refleksi</h5>
+              <p>Media Canva terbukti meningkatkan perhatian siswa secara signifikan dibanding slide konvensional. Namun perlu diperhatikan bahwa ketergantungan pada tampilan visual kadang mengorbankan kedalaman konten matematis.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 4: PENILAIAN GURU PAMONG & DPL
+═══════════════════════════════════════════════ -->
+<section id="penilaian" class="section section-alt">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Penilaian</span></div></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Evaluasi Profesional</span>
+      <h2 class="section-title">Penilaian Guru Pamong <em>&amp; DPL</em></h2>
+      <p class="section-sub">Rekam jejak perkembangan kemampuan mengajar berdasarkan penilaian supervisor</p>
+    </div>
+
+    <div class="penilaian-grid">
+      <!-- Lampiran 7 -->
+      <div class="penilaian-card" data-aos="fade-right">
+        <div class="pen-card-header">
+          <span class="pen-badge lamp7">Lampiran 7</span>
+          <h3>Penilaian Perangkat Pembelajaran</h3>
+          <div class="pen-score">
+            <span class="score-big">89</span>
+            <span class="score-suffix">/100</span>
+            <span class="score-grade">Sangat Baik</span>
+          </div>
+        </div>
+        <div class="pen-embed-placeholder">
+          <i class="fas fa-file-pdf"></i>
+          <p>Instrumen Penilaian Lampiran 7</p>
+          <button class="btn-sm btn-detail" onclick="openModal('modalLamp7')">Buka Dokumen</button>
+        </div>
+        <div class="pen-catatan">
+          <h5><i class="fas fa-comment-dots"></i> Catatan Guru Pamong</h5>
+          <p>"Perangkat pembelajaran yang disusun sudah menunjukkan pemahaman yang baik terhadap kurikulum merdeka. Perlu ditingkatkan kedalaman asesmen formatif dan variasi bentuk soal HOTS."</p>
+        </div>
+        <div class="pen-catatan refleksi-box">
+          <h5><i class="fas fa-sync-alt"></i> Refleksi Mahasiswa</h5>
+          <p>Masukan ini mendorong saya untuk lebih berani bereksperimen dengan bentuk asesmen non-konvensional seperti portofolio dan asesmen berbasis proyek pada siklus berikutnya.</p>
+        </div>
+      </div>
+
+      <!-- Lampiran 8 - 3 Siklus -->
+      <div class="penilaian-siklus-wrap" data-aos="fade-left">
+        <h3 class="siklus-title">Lampiran 8 — Penilaian Praktik Mengajar</h3>
+
+        <div class="siklus-tabs">
+          <button class="stab active" data-stab="s1">Siklus 1</button>
+          <button class="stab" data-stab="s2">Siklus 2</button>
+          <button class="stab" data-stab="s3">Siklus 3</button>
+        </div>
+
+        <div class="stab-panel active" data-spanel="s1">
+          <div class="siklus-info">
+            <div class="siklus-score-row">
+              <div class="siklus-score-item">
+                <span class="sk-label">Guru Pamong</span>
+                <span class="sk-val">82</span>
+              </div>
+              <div class="siklus-score-item">
+                <span class="sk-label">DPL</span>
+                <span class="sk-val">80</span>
+              </div>
+              <div class="siklus-score-item highlight">
+                <span class="sk-label">Rata-rata</span>
+                <span class="sk-val">81</span>
+              </div>
+            </div>
+            <p class="siklus-komentar"><strong>Komentar:</strong> "Mahasiswa menunjukkan kemampuan pengelolaan kelas yang cukup baik. Penyampaian materi sudah sistematis namun perlu lebih banyak pertanyaan pemantik berpikir tingkat tinggi."</p>
+            <p class="siklus-komentar"><strong>Refleksi:</strong> Siklus pertama memberikan gambaran nyata tentang kompleksitas mengelola 34 siswa dengan kebutuhan yang beragam. Saya menyadari perlunya strategi questioning yang lebih terstruktur.</p>
+          </div>
+        </div>
+
+        <div class="stab-panel" data-spanel="s2">
+          <div class="siklus-info">
+            <div class="siklus-score-row">
+              <div class="siklus-score-item">
+                <span class="sk-label">Guru Pamong</span>
+                <span class="sk-val">87</span>
+              </div>
+              <div class="siklus-score-item">
+                <span class="sk-label">DPL</span>
+                <span class="sk-val">85</span>
+              </div>
+              <div class="siklus-score-item highlight">
+                <span class="sk-label">Rata-rata</span>
+                <span class="sk-val">86</span>
+              </div>
+            </div>
+            <p class="siklus-komentar"><strong>Komentar:</strong> "Terlihat peningkatan yang signifikan dalam penerapan model PBL. Mahasiswa sudah mampu memfasilitasi diskusi kelompok dengan lebih efektif. Asesmen formatif perlu lebih diintegrasikan."</p>
+            <p class="siklus-komentar"><strong>Refleksi:</strong> Penggunaan media Canva dan aktivitas kelompok terbukti meningkatkan partisipasi siswa. Namun saya perlu lebih peka terhadap siswa yang diam dalam kelompok.</p>
+          </div>
+        </div>
+
+        <div class="stab-panel" data-spanel="s3">
+          <div class="siklus-info">
+            <div class="siklus-score-row">
+              <div class="siklus-score-item">
+                <span class="sk-label">Guru Pamong</span>
+                <span class="sk-val">91</span>
+              </div>
+              <div class="siklus-score-item">
+                <span class="sk-label">DPL</span>
+                <span class="sk-val">90</span>
+              </div>
+              <div class="siklus-score-item highlight">
+                <span class="sk-label">Rata-rata</span>
+                <span class="sk-val">90.5</span>
+              </div>
+            </div>
+            <p class="siklus-komentar"><strong>Komentar:</strong> "Perkembangan yang sangat memuaskan. Mahasiswa sudah mampu merespons kebutuhan belajar siswa secara adaptif dan menggunakan data asesmen untuk refleksi. Siap menuju PPL Mandiri."</p>
+            <p class="siklus-komentar"><strong>Refleksi:</strong> Siklus ketiga adalah yang paling memuaskan. Saya berhasil mengimplementasikan pembelajaran berdiferensiasi secara penuh dengan tiga jalur yang berbeda dan asesmen berbasis produk.</p>
+          </div>
+        </div>
+
+        <!-- Grafik Perkembangan -->
+        <div class="chart-wrap" data-aos="zoom-in">
+          <h4>Grafik Perkembangan Nilai</h4>
+          <canvas id="nilaiChart" width="400" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 5: MODEL GURU
+═══════════════════════════════════════════════ -->
+<section id="model-guru" class="section">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Model Guru</span></div></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Visi Profesional</span>
+      <h2 class="section-title">Model Guru <em>yang Dituju</em></h2>
+      <p class="section-sub">Gambaran guru profesional yang menjadi cita-cita dan arah pengembangan diri</p>
+    </div>
+
+    <div class="model-guru-grid">
+      <div class="visi-misi-wrap" data-aos="fade-right">
+        <div class="vm-card">
+          <div class="vm-icon"><i class="fas fa-eye"></i></div>
+          <h3>Visi</h3>
+          <p>Menjadi guru matematika yang inovatif, inklusif, dan inspiratif — yang tidak hanya mentransfer pengetahuan, tetapi menumbuhkan kecintaan belajar yang bertahan seumur hidup pada setiap siswanya.</p>
+        </div>
+        <div class="vm-card">
+          <div class="vm-icon"><i class="fas fa-map-signs"></i></div>
+          <h3>Misi</h3>
+          <ul>
+            <li>Merancang pembelajaran yang responsif terhadap keberagaman kebutuhan siswa</li>
+            <li>Mengintegrasikan teknologi secara bermakna dalam setiap proses belajar</li>
+            <li>Membangun komunitas belajar yang aman, suportif, dan kolaboratif</li>
+            <li>Terus mengembangkan diri melalui refleksi, riset, dan kolaborasi profesional</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="kompetensi-wrap" data-aos="fade-left">
+        <h3>Kompetensi yang Dikembangkan</h3>
+        <div class="kompetensi-list">
+          <div class="komp-item">
+            <div class="komp-header">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <span>Pedagogik</span>
+              <span class="komp-pct">88%</span>
+            </div>
+            <div class="komp-bar"><div class="komp-fill" style="width: 88%"></div></div>
+            <p>Merancang pembelajaran berdiferensiasi, menerapkan asesmen for/as/of learning, fasilitasi diskusi produktif.</p>
+          </div>
+          <div class="komp-item">
+            <div class="komp-header">
+              <i class="fas fa-calculator"></i>
+              <span>Profesional</span>
+              <span class="komp-pct">85%</span>
+            </div>
+            <div class="komp-bar"><div class="komp-fill" style="width: 85%"></div></div>
+            <p>Penguasaan materi matematika mendalam, integrasi TPACK, pemahaman perkembangan kurikulum.</p>
+          </div>
+          <div class="komp-item">
+            <div class="komp-header">
+              <i class="fas fa-users"></i>
+              <span>Sosial</span>
+              <span class="komp-pct">82%</span>
+            </div>
+            <div class="komp-bar"><div class="komp-fill" style="width: 82%"></div></div>
+            <p>Komunikasi empatik dengan siswa, orang tua, dan komunitas sekolah. Kolaborasi profesional guru.</p>
+          </div>
+          <div class="komp-item">
+            <div class="komp-header">
+              <i class="fas fa-heart"></i>
+              <span>Kepribadian</span>
+              <span class="komp-pct">90%</span>
+            </div>
+            <div class="komp-bar"><div class="komp-fill" style="width: 90%"></div></div>
+            <p>Integritas, keteladanan, growth mindset, dan komitmen terhadap pendidikan yang berkeadilan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Karakter Guru Roadmap -->
+    <div class="roadmap-wrap" data-aos="fade-up">
+      <h3>Roadmap Pengembangan Profesional</h3>
+      <div class="roadmap">
+        <div class="road-step">
+          <div class="road-icon active"><i class="fas fa-seedling"></i></div>
+          <span>PPL Terbimbing</span>
+          <small>Pondasi Dasar</small>
+        </div>
+        <div class="road-line"></div>
+        <div class="road-step">
+          <div class="road-icon"><i class="fas fa-leaf"></i></div>
+          <span>PPL Mandiri</span>
+          <small>Kemandirian</small>
+        </div>
+        <div class="road-line"></div>
+        <div class="road-step">
+          <div class="road-icon"><i class="fas fa-tree"></i></div>
+          <span>Guru Pemula</span>
+          <small>Adaptasi</small>
+        </div>
+        <div class="road-line"></div>
+        <div class="road-step">
+          <div class="road-icon"><i class="fas fa-star"></i></div>
+          <span>Guru Profesional</span>
+          <small>Inovasi</small>
+        </div>
+        <div class="road-line"></div>
+        <div class="road-step">
+          <div class="road-icon"><i class="fas fa-crown"></i></div>
+          <span>Guru Penggerak</span>
+          <small>Kepemimpinan</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 6: REFLEKSI AKHIR PPL
+═══════════════════════════════════════════════ -->
+<section id="refleksi" class="section section-alt">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Refleksi Akhir</span></div></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Introspeksi Mendalam</span>
+      <h2 class="section-title">Refleksi Akhir <em>PPL Terbimbing</em></h2>
+    </div>
+
+    <div class="refleksi-timeline">
+
+      <div class="ref-item" data-aos="fade-right">
+        <div class="ref-dot"><i class="fas fa-book"></i></div>
+        <div class="ref-card">
+          <h3>Apa yang Dipelajari Selama PPL?</h3>
+          <p>PPL Terbimbing di SMAN 1 Semarang memberikan pengalaman yang jauh melampaui ekspektasi awal saya. Saya belajar bahwa mengajar bukan sekadar menyampaikan materi, melainkan seni merespons dinamika manusia yang kompleks dan tidak terprediksi.</p>
+          <p>Hal terpenting yang saya pelajari adalah pentingnya <strong>mendengar sebelum mengajar</strong>. Data asesmen diagnostik di awal, observasi aktif selama pembelajaran, dan dialog autentik dengan siswa memberikan informasi jauh lebih berharga dari asumsi.</p>
+        </div>
+      </div>
+
+      <div class="ref-item right" data-aos="fade-left">
+        <div class="ref-dot"><i class="fas fa-mountain"></i></div>
+        <div class="ref-card">
+          <h3>Pengalaman Paling Menantang</h3>
+          <p>Siklus pertama adalah ujian terberat. Menghadapi kelas dengan 34 siswa yang memiliki gaya belajar, kecepatan, dan latar belakang berbeda secara bersamaan terasa overwhelming. Ada momen ketika saya kehilangan perhatian kelas di tengah sesi dan tidak tahu cara memulihkannya.</p>
+          <p>Tantangan lain adalah mengelola ekspektasi — ekspektasi diri sendiri yang terlalu tinggi, dan ekspektasi siswa yang kadang bertentangan dengan rancangan pembelajaran yang sudah dipersiapkan.</p>
+        </div>
+      </div>
+
+      <div class="ref-item" data-aos="fade-right">
+        <div class="ref-dot"><i class="fas fa-wrench"></i></div>
+        <div class="ref-card">
+          <h3>Solusi yang Dilakukan</h3>
+          <ul>
+            <li><strong>Penggunaan exit ticket harian</strong> untuk memantau pemahaman siswa secara real-time</li>
+            <li><strong>Pembentukan kelompok dinamis</strong> berdasarkan data asesmen formatif tiap siklus</li>
+            <li><strong>Teknik cold calling + think-pair-share</strong> untuk memastikan partisipasi merata</li>
+            <li><strong>Konferensi belajar mini</strong> (5 menit per kelompok) untuk umpan balik personal</li>
+            <li><strong>Konsultasi rutin</strong> dengan Guru Pamong setiap minggu untuk refleksi dan penyesuaian</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ref-item right" data-aos="fade-left">
+        <div class="ref-dot"><i class="fas fa-comment-alt"></i></div>
+        <div class="ref-card">
+          <h3>Umpan Balik dari Guru Pamong</h3>
+          <blockquote class="ref-quote">
+            "Sari menunjukkan perkembangan yang luar biasa selama tiga siklus. Kemampuan merancang perangkat pembelajaran sudah sangat baik. Yang perlu terus dikembangkan adalah fleksibilitas dalam merespons situasi kelas yang tidak terduga."
+            <cite>— Dra. Rina Kusumawati, M.Pd.</cite>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="ref-item" data-aos="fade-right">
+        <div class="ref-dot"><i class="fas fa-user-graduate"></i></div>
+        <div class="ref-card">
+          <h3>Umpan Balik dari DPL</h3>
+          <blockquote class="ref-quote">
+            "Kemampuan Sari dalam mengintegrasikan teori ke praktik sudah sangat baik. Riset tindakan kelas mini yang dilakukannya secara informal menunjukkan potensi sebagai guru-peneliti di masa depan."
+            <cite>— Dr. Budi Santoso, M.Si.</cite>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="ref-item right" data-aos="fade-left">
+        <div class="ref-dot"><i class="fas fa-rocket"></i></div>
+        <div class="ref-card">
+          <h3>Rencana Menuju PPL Mandiri</h3>
+          <ul>
+            <li>Mengembangkan sistem asesmen berbasis portofolio digital yang lebih komprehensif</li>
+            <li>Mendalami pendekatan Culturally Responsive Teaching untuk konteks siswa Jawa Tengah</li>
+            <li>Membangun komunitas belajar profesional dengan sesama mahasiswa PPG</li>
+            <li>Merancang proyek lintas mata pelajaran (matematika + sains) berbasis STEM</li>
+            <li>Meningkatkan kemampuan coaching dan mentoring untuk siswa berkebutuhan khusus</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 7: FILOSOFI MENGAJAR
+═══════════════════════════════════════════════ -->
+<section id="filosofi" class="section filosofi-section">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Filosofi Mengajar</span></div></div>
+  <div class="filosofi-bg"></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Landasan Berpikir</span>
+      <h2 class="section-title">Filosofi <em>Mengajar</em></h2>
+    </div>
+
+    <div class="filosofi-content">
+      <div class="filosofi-article" data-aos="fade-up">
+
+        <div class="fil-quote-big" data-aos="fade-up">
+          <i class="fas fa-quote-left"></i>
+          <p>"Ing ngarso sung tulodo, ing madyo mangun karso, tut wuri handayani."</p>
+          <cite>— Ki Hadjar Dewantara</cite>
+        </div>
+
+        <div class="fil-section">
+          <h3>Prinsip Mengajar: Guru sebagai Fasilitator Makna</h3>
+          <p>Saya percaya bahwa peran utama seorang guru bukan sebagai sumber pengetahuan tunggal, melainkan sebagai arsitek pengalaman belajar. Selaras dengan pemikiran Ki Hadjar Dewantara, guru yang baik adalah yang mampu berdiri di depan sebagai teladan, berada di tengah sebagai motivator, dan mendorong dari belakang saat siswa sudah mandiri.</p>
+          <p>Dalam praktik mengajar matematika, saya menerjemahkan prinsip ini dengan menciptakan situasi-situasi di mana siswa menemukan konsep matematika melalui pengalaman bermakna, bukan hanya menghafal prosedur. Ketika siswa "menemukan" sendiri rumus kuadratik melalui serangkaian eksplorasi, pemahaman yang terbentuk jauh lebih dalam dan tahan lama.</p>
+        </div>
+
+        <div class="fil-theory-grid">
+          <div class="fil-theory-card">
+            <div class="ftc-icon"><i class="fas fa-tree"></i></div>
+            <h4>Ki Hadjar Dewantara</h4>
+            <p>Pendidikan sebagai pembebasan potensi. Guru bukan pengisi "tabung kosong" melainkan penyubur "benih" yang ada dalam diri setiap anak.</p>
+          </div>
+          <div class="fil-theory-card">
+            <div class="ftc-icon"><i class="fas fa-cogs"></i></div>
+            <h4>Konstruktivisme (Vygotsky)</h4>
+            <p>Pengetahuan dibangun secara aktif oleh pelajar melalui interaksi sosial dan scaffolding dalam Zone of Proximal Development.</p>
+          </div>
+          <div class="fil-theory-card">
+            <div class="ftc-icon"><i class="fas fa-compass"></i></div>
+            <h4>Experiential Learning (Dewey)</h4>
+            <p>Belajar melalui pengalaman yang reflektif. "Education is not preparation for life; education is life itself."</p>
+          </div>
+          <div class="fil-theory-card">
+            <div class="ftc-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <h4>Pembelajaran Berdiferensiasi</h4>
+            <p>Mengakui bahwa setiap siswa unik. Diferensiasi konten, proses, produk, dan lingkungan belajar untuk memenuhi kebutuhan semua learner.</p>
+          </div>
+        </div>
+
+        <div class="fil-section">
+          <h3>Keyakinan Saya sebagai Guru</h3>
+          <p>Saya meyakini bahwa <strong>setiap siswa datang ke kelas membawa potensi</strong> — yang tugas guru adalah menemukannya, bukan menciptakannya. Matematika bukan mata pelajaran eksklusif untuk siswa "cerdas". Matematika adalah cara berpikir yang bisa diakses oleh semua orang jika diajarkan dengan cara yang tepat, kontekstual, dan penuh empati.</p>
+          <p>Keyakinan ini mendorong saya untuk tidak pernah menyerah pada stigma "siswa ini memang tidak bisa matematika". Setiap siswa yang kesulitan bukan sedang gagal — mereka sedang menemukan bahwa cara belajar yang selama ini digunakan belum cocok dengan mereka. Tugas saya adalah menemukan cara yang cocok itu.</p>
+        </div>
+
+        <div class="fil-section">
+          <h3>Nilai-Nilai yang Saya Pegang</h3>
+          <div class="fil-values">
+            <div class="fval">
+              <span class="fval-num">01</span>
+              <div>
+                <h5>Keadilan dalam Belajar</h5>
+                <p>Setiap siswa berhak mendapat perhatian dan kesempatan yang setara untuk berkembang, tanpa memandang latar belakang.</p>
+              </div>
+            </div>
+            <div class="fval">
+              <span class="fval-num">02</span>
+              <div>
+                <h5>Keberanian Berinovasi</h5>
+                <p>Seorang guru profesional tidak berhenti belajar. Inovasi dalam pembelajaran lahir dari keberanian keluar dari zona nyaman.</p>
+              </div>
+            </div>
+            <div class="fval">
+              <span class="fval-num">03</span>
+              <div>
+                <h5>Integritas dan Keteladanan</h5>
+                <p>Karakter siswa terbentuk bukan dari apa yang guru katakan, tetapi dari apa yang guru lakukan di depan mereka setiap hari.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 8: DOKUMENTASI PPL
+═══════════════════════════════════════════════ -->
+<section id="dokumentasi" class="section section-alt">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Dokumentasi</span></div></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Momen Berharga</span>
+      <h2 class="section-title">Dokumentasi <em>PPL</em></h2>
+    </div>
+
+    <!-- Filter Gallery -->
+    <div class="gallery-filter" data-aos="fade-up">
+      <button class="gfil-btn active" data-gfil="all">Semua</button>
+      <button class="gfil-btn" data-gfil="observasi">Observasi</button>
+      <button class="gfil-btn" data-gfil="mengajar">Praktik Mengajar</button>
+      <button class="gfil-btn" data-gfil="kegiatan">Kegiatan Sekolah</button>
+      <button class="gfil-btn" data-gfil="seminar">Seminar</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" data-gcategory="observasi" data-aos="zoom-in">
+        <div class="gallery-placeholder gp-1">
+          <i class="fas fa-eye"></i>
+          <span>Observasi Pembelajaran</span>
+        </div>
+        <div class="gallery-overlay">
+          <h5>Observasi Kelas X MIPA 1</h5>
+          <p>Observasi pembelajaran matematika bersama Guru Pamong — Oktober 2024</p>
+          <button onclick="openLightbox(0)"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+      <div class="gallery-item large" data-gcategory="mengajar" data-aos="zoom-in" data-aos-delay="100">
+        <div class="gallery-placeholder gp-2">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <span>Praktik Mengajar Siklus 1</span>
+        </div>
+        <div class="gallery-overlay">
+          <h5>Praktik Mengajar Perdana</h5>
+          <p>Siklus 1 — Materi Persamaan Kuadrat — November 2024</p>
+          <button onclick="openLightbox(1)"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+      <div class="gallery-item" data-gcategory="mengajar" data-aos="zoom-in" data-aos-delay="150">
+        <div class="gallery-placeholder gp-3">
+          <i class="fas fa-users"></i>
+          <span>Diskusi Kelompok</span>
+        </div>
+        <div class="gallery-overlay">
+          <h5>Diskusi Kelompok PJBL</h5>
+          <p>Siswa berdiskusi tentang aplikasi fungsi kuadrat</p>
+          <button onclick="openLightbox(2)"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+      <div class="gallery-item" data-gcategory="kegiatan" data-aos="zoom-in">
+        <div class="gallery-placeholder gp-4">
+          <i class="fas fa-flag"></i>
+          <span>Upacara Bendera</span>
+        </div>
+        <div class="gallery-overlay">
+          <h5>Upacara Hari Sumpah Pemuda</h5>
+          <p>28 Oktober 2024 bersama civitas SMAN 1 Semarang</p>
+          <button onclick="openLightbox(3)"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+      <div class="gallery-item large" data-gcategory="seminar" data-aos="zoom-in" data-aos-delay="100">
+        <div class="gallery-placeholder gp-5">
+          <i class="fas fa-microphone-alt"></i>
+          <span>Seminar PPG</span>
+        </div>
+        <div class="gallery-overlay">
+          <h5>Seminar Refleksi PPL Terbimbing</h5>
+          <p>Presentasi hasil PPL di hadapan DPL dan Guru Pamong</p>
+          <button onclick="openLightbox(4)"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+      <div class="gallery-item" data-gcategory="mengajar" data-aos="zoom-in" data-aos-delay="150">
+        <div class="gallery-placeholder gp-6">
+          <i class="fas fa-laptop"></i>
+          <span>Pembelajaran Digital</span>
+        </div>
+        <div class="gallery-overlay">
+          <h5>Kuis Quizizz Online</h5>
+          <p>Evaluasi formatif berbasis game — Desember 2024</p>
+          <button onclick="openLightbox(5)"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 9: LAMPIRAN
+═══════════════════════════════════════════════ -->
+<section id="lampiran" class="section">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Lampiran</span></div></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Repositori Dokumen</span>
+      <h2 class="section-title">Lampiran <em>Dokumen</em></h2>
+    </div>
+
+    <!-- Search & Filter -->
+    <div class="lampiran-controls" data-aos="fade-up">
+      <div class="search-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" id="lampiranSearch" placeholder="Cari dokumen..." />
+      </div>
+      <div class="lamp-filter-btns">
+        <button class="lfil-btn active" data-lfil="all">Semua</button>
+        <button class="lfil-btn" data-lfil="perangkat">Perangkat</button>
+        <button class="lfil-btn" data-lfil="media">Media</button>
+        <button class="lfil-btn" data-lfil="penilaian">Penilaian</button>
+        <button class="lfil-btn" data-lfil="sertifikat">Sertifikat</button>
+      </div>
+    </div>
+
+    <div class="lampiran-list" id="lampiranList">
+
+      <div class="lamp-item" data-lcat="perangkat" data-lname="Modul Ajar Persamaan Kuadrat" data-aos="fade-up">
+        <div class="lamp-icon"><i class="fas fa-file-pdf"></i></div>
+        <div class="lamp-info">
+          <h4>Modul Ajar — Persamaan Kuadrat</h4>
+          <span class="lamp-cat">Perangkat Pembelajaran</span>
+        </div>
+        <div class="lamp-meta">
+          <span><i class="fas fa-file-alt"></i> PDF · 2.4 MB</span>
+          <span><i class="fas fa-calendar"></i> Oktober 2024</span>
+        </div>
+        <div class="lamp-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalModulAjar')"><i class="fas fa-eye"></i> Lihat</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i> Unduh</a>
+        </div>
+      </div>
+
+      <div class="lamp-item" data-lcat="perangkat" data-lname="LKPD Fungsi Kuadrat" data-aos="fade-up" data-aos-delay="50">
+        <div class="lamp-icon"><i class="fas fa-file-pdf"></i></div>
+        <div class="lamp-info">
+          <h4>LKPD — Fungsi Kuadrat</h4>
+          <span class="lamp-cat">Perangkat Pembelajaran</span>
+        </div>
+        <div class="lamp-meta">
+          <span><i class="fas fa-file-alt"></i> PDF · 1.8 MB</span>
+          <span><i class="fas fa-calendar"></i> November 2024</span>
+        </div>
+        <div class="lamp-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalLKPD')"><i class="fas fa-eye"></i> Lihat</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i> Unduh</a>
+        </div>
+      </div>
+
+      <div class="lamp-item" data-lcat="perangkat" data-lname="ATP Semester Ganjil" data-aos="fade-up" data-aos-delay="100">
+        <div class="lamp-icon"><i class="fas fa-file-word"></i></div>
+        <div class="lamp-info">
+          <h4>Alur Tujuan Pembelajaran (ATP) — Semester Ganjil</h4>
+          <span class="lamp-cat">Perangkat Pembelajaran</span>
+        </div>
+        <div class="lamp-meta">
+          <span><i class="fas fa-file-alt"></i> DOCX · 890 KB</span>
+          <span><i class="fas fa-calendar"></i> September 2024</span>
+        </div>
+        <div class="lamp-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalATP')"><i class="fas fa-eye"></i> Lihat</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i> Unduh</a>
+        </div>
+      </div>
+
+      <div class="lamp-item" data-lcat="penilaian" data-lname="Lampiran 7 Penilaian Perangkat" data-aos="fade-up" data-aos-delay="150">
+        <div class="lamp-icon lamp-icon-gold"><i class="fas fa-file-pdf"></i></div>
+        <div class="lamp-info">
+          <h4>Lampiran 7 — Instrumen Penilaian Perangkat Pembelajaran</h4>
+          <span class="lamp-cat">Penilaian</span>
+        </div>
+        <div class="lamp-meta">
+          <span><i class="fas fa-star"></i> Nilai: 89/100</span>
+          <span><i class="fas fa-calendar"></i> Oktober 2024</span>
+        </div>
+        <div class="lamp-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalLamp7')"><i class="fas fa-eye"></i> Lihat</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i> Unduh</a>
+        </div>
+      </div>
+
+      <div class="lamp-item" data-lcat="penilaian" data-lname="Lampiran 8 Penilaian Praktik Mengajar" data-aos="fade-up" data-aos-delay="200">
+        <div class="lamp-icon lamp-icon-gold"><i class="fas fa-file-pdf"></i></div>
+        <div class="lamp-info">
+          <h4>Lampiran 8 — Instrumen Penilaian Praktik Mengajar (3 Siklus)</h4>
+          <span class="lamp-cat">Penilaian</span>
+        </div>
+        <div class="lamp-meta">
+          <span><i class="fas fa-star"></i> Rata-rata: 85.8/100</span>
+          <span><i class="fas fa-calendar"></i> Nov–Des 2024</span>
+        </div>
+        <div class="lamp-actions">
+          <button class="btn-sm btn-detail"><i class="fas fa-eye"></i> Lihat</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i> Unduh</a>
+        </div>
+      </div>
+
+      <div class="lamp-item" data-lcat="media" data-lname="Slide Canva Persamaan Kuadrat" data-aos="fade-up" data-aos-delay="250">
+        <div class="lamp-icon lamp-icon-purple"><i class="fas fa-film"></i></div>
+        <div class="lamp-info">
+          <h4>Slide Canva — Persamaan Kuadrat</h4>
+          <span class="lamp-cat">Media Pembelajaran</span>
+        </div>
+        <div class="lamp-meta">
+          <span><i class="fas fa-link"></i> Link Canva</span>
+          <span><i class="fas fa-calendar"></i> Oktober 2024</span>
+        </div>
+        <div class="lamp-actions">
+          <button class="btn-sm btn-detail" onclick="openModal('modalCanva')"><i class="fas fa-eye"></i> Lihat</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-external-link-alt"></i> Buka</a>
+        </div>
+      </div>
+
+      <div class="lamp-item" data-lcat="sertifikat" data-lname="Sertifikat PPG" data-aos="fade-up" data-aos-delay="300">
+        <div class="lamp-icon lamp-icon-green"><i class="fas fa-certificate"></i></div>
+        <div class="lamp-info">
+          <h4>Sertifikat Peserta PPG Calon Guru 2024</h4>
+          <span class="lamp-cat">Sertifikat</span>
+        </div>
+        <div class="lamp-meta">
+          <span><i class="fas fa-university"></i> LPTK</span>
+          <span><i class="fas fa-calendar"></i> 2024</span>
+        </div>
+        <div class="lamp-actions">
+          <button class="btn-sm btn-detail"><i class="fas fa-eye"></i> Lihat</button>
+          <a href="#" class="btn-sm btn-download"><i class="fas fa-download"></i> Unduh</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 10: KONTAK
+═══════════════════════════════════════════════ -->
+<section id="kontak" class="section section-alt">
+  <div class="breadcrumb"><div class="container"><span><a href="#beranda">Beranda</a> / Kontak</span></div></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Hubungi Saya</span>
+      <h2 class="section-title">Informasi <em>Kontak</em></h2>
+    </div>
+
+    <div class="kontak-grid">
+      <div class="kontak-info-wrap" data-aos="fade-right">
+        <h3>Mari Terhubung</h3>
+        <p>Sebagai calon guru profesional, saya terbuka untuk kolaborasi, diskusi pendidikan, dan umpan balik yang membangun dari rekan sejawat, dosen, dan guru pamong.</p>
+
+        <div class="kontak-items">
+          <div class="kontak-detail">
+            <div class="kd-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="kd-label">Email</span>
+              <a href="mailto:sari.dewi@email.com">sari.dewi@email.com</a>
+            </div>
+          </div>
+          <div class="kontak-detail">
+            <div class="kd-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <span class="kd-label">WhatsApp</span>
+              <a href="https://wa.me/6281234567890">+62 812-3456-7890</a>
+            </div>
+          </div>
+          <div class="kontak-detail">
+            <div class="kd-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <span class="kd-label">LinkedIn</span>
+              <a href="#">linkedin.com/in/saridewi</a>
+            </div>
+          </div>
+          <div class="kontak-detail">
+            <div class="kd-icon"><i class="fab fa-instagram"></i></div>
+            <div>
+              <span class="kd-label">Instagram</span>
+              <a href="#">@saridewi_guru</a>
+            </div>
+          </div>
+          <div class="kontak-detail">
+            <div class="kd-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="kd-label">Lokasi</span>
+              <span>Semarang, Jawa Tengah</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kontak-form-wrap" data-aos="fade-left">
+        <div class="kontak-form-card">
+          <h3>Kirim Pesan</h3>
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama Anda" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="email@anda.com" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label>Peran</label>
+            <select class="form-input">
+              <option>Dosen Pembimbing Lapangan</option>
+              <option>Guru Pamong</option>
+              <option>Penguji E-Portfolio</option>
+              <option>Rekan Sejawat</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Pesan</label>
+            <textarea placeholder="Tulis pesan Anda..." class="form-input" rows="4"></textarea>
+          </div>
+          <button class="btn btn-primary w-full" onclick="sendMessage()">
+            <span>Kirim Pesan</span><i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand">
+          <span class="brand-icon">EP</span>
+          <span class="brand-text">E-Portfolio <em>PPL</em></span>
+        </div>
+        <p>E-Portfolio PPL Terbimbing PPG Calon Guru sebagai media penilaian profesional oleh Guru Pamong dan DPL.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="email"><i class="fas fa-envelope"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#profil">Profil Mahasiswa</a></li>
+          <li><a href="#artefak">Artefak Pembelajaran</a></li>
+          <li><a href="#penilaian">Penilaian</a></li>
+          <li><a href="#refleksi">Refleksi Akhir</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Halaman</h4>
+        <ul>
+          <li><a href="#model-guru">Model Guru</a></li>
+          <li><a href="#filosofi">Filosofi Mengajar</a></li>
+          <li><a href="#dokumentasi">Dokumentasi PPL</a></li>
+          <li><a href="#lampiran">Lampiran</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h4>Informasi</h4>
+        <p><strong>Sari Dewi Anggraini, S.Pd.</strong></p>
+        <p>PPG Pendidikan Matematika</p>
+        <p>SMAN 1 Semarang</p>
+        <p>Tahun Akademik 2024/2025</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sari Dewi Anggraini · E-Portfolio PPL Terbimbing · PPG Calon Guru</p>
+      <p>Dibuat dengan <i class="fas fa-heart"></i> untuk pendidikan Indonesia</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ═══════════════════════════════════════════════
+     MODALS
+═══════════════════════════════════════════════ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+
+<!-- Modal Modul Ajar -->
+<div class="modal" id="modalModulAjar">
+  <div class="modal-header">
+    <h3>Modul Ajar — Persamaan Kuadrat</h3>
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-embed-area">
+      <div class="embed-placeholder">
+        <i class="fas fa-file-pdf"></i>
+        <p>Pratinjau PDF</p>
+        <small>Ganti URL src dengan link Google Drive PDF Anda</small>
+        <!-- Contoh embed: <iframe src="https://drive.google.com/file/d/YOUR_ID/preview" width="100%" height="400"></iframe> -->
+      </div>
+    </div>
+    <div class="modal-meta-info">
+      <span><strong>Kategori:</strong> Perangkat Pembelajaran</span>
+      <span><strong>Kelas:</strong> X MIPA</span>
+      <span><strong>Siklus:</strong> 1 & 2</span>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Unduh Dokumen</a>
+    <button class="btn btn-outline" onclick="closeModal()">Tutup</button>
+  </div>
+</div>
+
+<!-- Modal LKPD -->
+<div class="modal" id="modalLKPD">
+  <div class="modal-header">
+    <h3>LKPD — Fungsi Kuadrat</h3>
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-embed-area">
+      <div class="embed-placeholder">
+        <i class="fas fa-file-pdf"></i>
+        <p>Pratinjau PDF LKPD</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Unduh</a>
+    <button class="btn btn-outline" onclick="closeModal()">Tutup</button>
+  </div>
+</div>
+
+<!-- Modal ATP -->
+<div class="modal" id="modalATP">
+  <div class="modal-header">
+    <h3>Alur Tujuan Pembelajaran (ATP)</h3>
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-embed-area">
+      <div class="embed-placeholder">
+        <i class="fas fa-route"></i>
+        <p>Pratinjau ATP Semester Ganjil</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Unduh</a>
+    <button class="btn btn-outline" onclick="closeModal()">Tutup</button>
+  </div>
+</div>
+
+<!-- Modal Canva -->
+<div class="modal" id="modalCanva">
+  <div class="modal-header">
+    <h3>Slide Canva — Persamaan Kuadrat</h3>
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-embed-area">
+      <div class="embed-placeholder">
+        <i class="fas fa-presentation-screen"></i>
+        <p>Pratinjau Canva</p>
+        <small>Ganti dengan embed Canva: &lt;div class="canva-embed"&gt;...&lt;/div&gt;</small>
+        <!-- Contoh: <div style="position:relative;width:100%;height:0;padding-top:56.25%;"> <iframe loading="lazy" style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;" src="https://www.canva.com/design/YOUR_ID/view?embed"></iframe></div> -->
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Buka di Canva</a>
+    <button class="btn btn-outline" onclick="closeModal()">Tutup</button>
+  </div>
+</div>
+
+<!-- Modal Video -->
+<div class="modal" id="modalVideo">
+  <div class="modal-header">
+    <h3>Video Pembelajaran — Grafik Fungsi Kuadrat</h3>
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-embed-area">
+      <div class="embed-placeholder">
+        <i class="fab fa-youtube"></i>
+        <p>Pratinjau Video YouTube</p>
+        <small>Ganti dengan embed YouTube: &lt;iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"&gt;&lt;/iframe&gt;</small>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary"><i class="fab fa-youtube"></i> Tonton di YouTube</a>
+    <button class="btn btn-outline" onclick="closeModal()">Tutup</button>
+  </div>
+</div>
+
+<!-- Modal Quizizz -->
+<div class="modal" id="modalQuizizz">
+  <div class="modal-header">
+    <h3>Kuis Quizizz — Evaluasi Bab 2</h3>
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-info-list">
+      <div class="mil-item"><span>Jumlah Soal</span><strong>20 soal</strong></div>
+      <div class="mil-item"><span>Jumlah Peserta</span><strong>34 siswa</strong></div>
+      <div class="mil-item"><span>Rata-rata Nilai</span><strong>78.4</strong></div>
+      <div class="mil-item"><span>Tingkat Ketuntasan</span><strong>82%</strong></div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Buka Quizizz</a>
+    <button class="btn btn-outline" onclick="closeModal()">Tutup</button>
+  </div>
+</div>
+
+<!-- Modal Produk Siswa -->
+<div class="modal" id="modalProdukSiswa">
+  <div class="modal-header">
+    <h3>Produk Proyek Siswa</h3>
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-body">
+    <p style="margin-bottom:1rem;">Galeri produk proyek 8 kelompok — Aplikasi Fungsi Kuadrat dalam Kehidupan Sehari-hari</p>
+    <div class="mini-gallery">
+      <div class="mg-item"><i class="fas fa-image"></i><span>Kelompok 1: Lintasan Peluru</span></div>
+      <div class="mg-item"><i class="fas fa-image"></i><span>Kelompok 2: Jembatan Parabolik</span></div>
+      <div class="mg-item"><i class="fas fa-image"></i><span>Kelompok 3: Panel Surya</span></div>
+      <div class="mg-item"><i class="fas fa-image"></i><span>Kelompok 4: Desain Antena</span></div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Unduh Semua</a>
+    <button class="btn btn-outline" onclick="closeModal()">Tutup</button>
+  </div>
+</div>
+
+<!-- Modal Lampiran 7 -->
+<div class="modal" id="modalLamp7">
+  <div class="modal-header">
+    <h3>Lampiran 7 — Penilaian Perangkat Pembelajaran</h3>
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-score-display">
+      <div class="msd-inner">
+        <span class="msd-val">89</span>
+        <span class="msd-label">Nilai Guru Pamong</span>
+        <span class="msd-grade">Sangat Baik</span>
+      </div>
+    </div>
+    <div class="modal-embed-area">
+      <div class="embed-placeholder">
+        <i class="fas fa-file-pdf"></i>
+        <p>Instrumen Penilaian Lampiran 7</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Unduh</a>
+    <button class="btn btn-outline" onclick="closeModal()">Tutup</button>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <button class="lightbox-prev" onclick="lightboxNav(-1)"><i class="fas fa-chevron-left"></i></button>
+  <button class="lightbox-next" onclick="lightboxNav(1)"><i class="fas fa-chevron-right"></i></button>
+  <div class="lightbox-content">
+    <div class="lightbox-img-wrap" id="lightboxImg">
+      <div class="lb-placeholder"><i class="fas fa-image"></i><span id="lbCaption"></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
